@@ -16,7 +16,7 @@ string Video::showAllVideosScore()
         // go throught the file and read line by line
         while (getline(file, currentLine))
         {
-            cout << currentLine.substr(1) << endl;
+            cout << currentLine.substr(2) << endl;
         };
         file.close();
     }
@@ -24,9 +24,14 @@ string Video::showAllVideosScore()
     {
         cerr << "FATAL AND TERRIBLE ERROR OPENING FILE!" << endl;
     }
+    return 0;
 }
 
-double Video::addScore(int score) { qualifications.push_back(score); }
+double Video::addScore(int score)
+{
+    qualifications.push_back(score);
+    return 0;
+}
 double Video::getAverage()
 {
     if (qualifications.empty())
