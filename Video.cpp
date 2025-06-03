@@ -21,4 +21,7 @@ double Video::getAverage()
     }
     return sum / qualifications.size();
 }
-string Video::getGenre() {}
+string Video::getGenre()
+{
+    return genre;
+}
