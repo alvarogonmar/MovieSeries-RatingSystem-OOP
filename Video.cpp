@@ -10,7 +10,7 @@ string Video::showAllVideosScore()
 {
 }
 
-double Video::addScore(int score)
+double Video::addScore(double score)
 {
     qualifications.push_back(score);
     return 0;

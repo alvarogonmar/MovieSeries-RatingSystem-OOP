@@ -12,7 +12,7 @@ protected:
 public:
     Video(string type, string id, string title, string genre, int duration);
     string showAllVideosScore();
-    double addScore(int score);
+    double addScore(double score);
     double getAverage();
     string getGenre();
 };
