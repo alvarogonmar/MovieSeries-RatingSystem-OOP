@@ -4,7 +4,7 @@ using namespace std;
 
 class Video
 {
-private:
+protected:
     string type, id, title, genre;
     int duration;
     vector<int> qualifications;
@@ -12,7 +12,7 @@ private:
 public:
     Video(string type, string id, string title, string genre, int duration);
     string showAllVideosScore();
-    double addScore();
+    double addScore(int score);
     double getAverage();
     string getGenre();
 };
