@@ -4,3 +4,6 @@ using namespace std;
 
 Chapter::Chapter(string type, string id, string title, string genre, int duration, int episodeNumber, string serieTitle)
     : Video(type, id, title, genre, duration), episodeNumber(episodeNumber), serieTitle(serieTitle) {}
+
+string Chapter::getSerieTitle() { return serieTitle; }
+int Chapter::getEpisodeNumber() { return episodeNumber; }
