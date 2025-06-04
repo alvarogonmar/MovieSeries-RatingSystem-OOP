@@ -4,4 +4,6 @@ using namespace std;
 
 class Movie : Video
 {
+public:
+    Movie(string type, string id, string title, string genre, int duration);
 };

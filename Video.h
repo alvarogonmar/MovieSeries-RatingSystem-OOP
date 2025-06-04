@@ -11,8 +11,10 @@ protected:
 
 public:
     Video(string type, string id, string title, string genre, int duration);
-    string showAllVideosScore();
     double addScore(double score);
     double getAverage();
     string getGenre();
+    string getId();
+    string getTitle();
+    double getDuration() :
 };
