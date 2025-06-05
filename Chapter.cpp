@@ -2,13 +2,14 @@
 using namespace std;
 #include <iostream>
 
-Chapter::Chapter(string type, string id, string title, string genre, string duration, string episodeNumber, string serieTitle)
-    : Video(type, id, title, genre, duration), episodeNumber(episodeNumber), serieTitle(serieTitle) {}
+Chapter::Chapter(string type, string id, string title, string duration, string genre, string serieTitle, string episodeNumber)
+    : Video(type, id, title, genre, duration), serieTitle(serieTitle), episodeNumber(episodeNumber) {}
 
 void Chapter::print()
 {
-    cout << "ID: " + id + " Title: " + title + " Genre: " + genre + " Duration: " + duration + "Serie Title: " + serieTitle +
-                " Episode Number: " + episodeNumber;
+    cout << "ID: " + id + "|Chapter Title: " + title + "|Genre: " + genre + "|Duration: " + duration + " mins |Serie Title: " + serieTitle +
+                "|Episode Number: " + episodeNumber
+         << endl;
 }
 
 string Chapter::getSerieTitle() { return serieTitle; }

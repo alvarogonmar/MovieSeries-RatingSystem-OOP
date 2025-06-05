@@ -40,10 +40,10 @@ int main()
                     parts[0], // type
                     parts[1], // id
                     parts[2], // title
-                    parts[4], // genre
                     parts[3], // duration
-                    parts[4], // episodeNumber
-                    parts[5]  // serie title
+                    parts[4], // genre
+                    parts[5], // serieTITLE
+                    parts[6]  // episodeNumber
                 );
                 catalog.push_back(chap);
             }
@@ -53,5 +53,9 @@ int main()
     else
     {
         cerr << "FATAL AND TERRIBLE ERROR OPENING FILE!" << endl;
+    }
+    for (Video *video : catalog)
+    {
+        video->print();
     }
 }
