@@ -6,5 +6,5 @@ class Movie : public Video
 {
 public:
     Movie(string type, string id, string title, string genre, string duration);
-    string printMovie();
+    void printMovie();
 };
