@@ -5,5 +5,6 @@ using namespace std;
 class Movie : public Video
 {
 public:
-    Movie(string type, string id, string title, string genre, int duration);
+    Movie(string type, string id, string title, string genre, string duration);
+    string printMovie();
 };

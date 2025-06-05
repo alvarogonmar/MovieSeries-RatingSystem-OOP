@@ -5,12 +5,11 @@ using namespace std;
 class Video
 {
 protected:
-    string type, id, title, genre;
-    int duration;
+    string type, id, title, genre, duration;
     vector<int> qualifications;
 
 public:
-    Video(string type, string id, string title, string genre, int duration);
+    Video(string type, string id, string title, string genre, string duration);
     double addScore(double score);
     double getAverage();
     string getGenre();

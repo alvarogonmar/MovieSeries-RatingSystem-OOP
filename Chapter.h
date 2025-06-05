@@ -5,11 +5,11 @@ using namespace std;
 class Chapter : public Video
 {
 protected:
-    int episodeNumber;
+    string episodeNumber;
     string serieTitle;
 
 public:
-    Chapter(string type, string id, string title, string genre, int duration, int episodeNumber, string serieTitle);
-    int getEpisodeNumber();
+    Chapter(string type, string id, string title, string genre, string duration, string episodeNumber, string serieTitle);
+    string getEpisodeNumber();
     string getSerieTitle();
 };

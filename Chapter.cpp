@@ -2,8 +2,8 @@
 using namespace std;
 #include <iostream>
 
-Chapter::Chapter(string type, string id, string title, string genre, int duration, int episodeNumber, string serieTitle)
+Chapter::Chapter(string type, string id, string title, string genre, string duration, string episodeNumber, string serieTitle)
     : Video(type, id, title, genre, duration), episodeNumber(episodeNumber), serieTitle(serieTitle) {}
 
 string Chapter::getSerieTitle() { return serieTitle; }
-int Chapter::getEpisodeNumber() { return episodeNumber; }
+string Chapter::getEpisodeNumber() { return episodeNumber; }

@@ -2,5 +2,10 @@
 using namespace std;
 #include <iostream>
 
-Movie::Movie(string type, string id, string title, string genre, int duration)
+Movie::Movie(string type, string id, string title, string genre, string duration)
     : Video(type, id, title, genre, duration) {}
+
+string Movie::printMovie()
+{
+    cout << "ID: " + id + " Title: " + title + " Genre: " + genre + " Duration: " + duration;
+}
