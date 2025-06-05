@@ -5,7 +5,7 @@ using namespace std;
 Movie::Movie(string type, string id, string title, string genre, string duration)
     : Video(type, id, title, genre, duration) {}
 
-void Movie::printMovie()
+void Movie::print()
 {
     cout << "ID: " + id + " Title: " + title + " Genre: " + genre + " Duration: " + duration;
 }

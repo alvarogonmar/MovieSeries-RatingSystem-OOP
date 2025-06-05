@@ -11,6 +11,7 @@ protected:
 public:
     Video(string type, string id, string title, string genre, string duration);
     double addScore(double score);
+    virtual void print() = 0;
     double getAverage();
     string getGenre();
     string getId();
