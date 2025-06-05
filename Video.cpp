@@ -4,7 +4,7 @@
 #include <numeric>
 using namespace std;
 
-Video::Video(string type, string id, string title, string genre, int duration) : type(type), id(id), title(title), genre(genre), duration(duration) {}
+Video::Video(string type, string id, string title, string genre, string duration) : type(type), id(id), title(title), genre(genre), duration(duration) {}
 
 double Video::addScore(double score)
 {
@@ -25,4 +25,4 @@ double Video::getAverage()
 string Video::getGenre() { return genre; }
 string Video::getId() { return id; }
 string Video::getTitle() { return title; }
-double Video::getDuration() { return duration; }
+string Video::getDuration() { return duration; }

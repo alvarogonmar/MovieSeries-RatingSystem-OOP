@@ -15,5 +15,5 @@ public:
     string getGenre();
     string getId();
     string getTitle();
-    double getDuration();
+    string getDuration();
 };
