@@ -58,4 +58,8 @@ int main()
     {
         video->print();
     }
+    for (Video *video : catalog)
+    {
+        delete video;
+    }
 }
