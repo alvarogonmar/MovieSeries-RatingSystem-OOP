@@ -10,10 +10,11 @@ protected:
 
 public:
     Video(string type, string id, string title, string genre, string duration);
-    double addScore(double score);
+    void addScore(double score);
     virtual void print() = 0;
     virtual ~Video() {} // destructor
     double getAverage();
+
     string getGenre();
     string getId();
     string getTitle();

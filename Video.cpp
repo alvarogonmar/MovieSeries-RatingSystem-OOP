@@ -6,10 +6,9 @@ using namespace std;
 
 Video::Video(string type, string id, string title, string genre, string duration) : type(type), id(id), title(title), genre(genre), duration(duration) {}
 
-double Video::addScore(double score)
+void Video::addScore(double score)
 {
     qualifications.push_back(score);
-    return 0;
 }
 double Video::getAverage()
 {
