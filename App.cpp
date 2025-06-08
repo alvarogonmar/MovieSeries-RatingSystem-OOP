@@ -11,6 +11,7 @@ using namespace std;
 int main()
 {
     vector<Video *> catalog;
+    loadCatalog(catalog); // Leer el catalogo solo una vez
 
     int userOption = 0;
 
@@ -30,6 +31,10 @@ int main()
             addScore(catalog);
         }
     } while (userOption != 9);
+
+    for (Video *video : catalog)
+        delete video;
+
     cout << "Goodbye!" << endl;
     return 0;
 }
