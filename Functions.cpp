@@ -60,11 +60,6 @@ void showCatalog(vector<Video *> &catalog)
     for (Video *video : catalog)
     {
         video->print();
-        video->getAverage();
-    }
-    for (Video *video : catalog)
-    {
-        delete video;
     }
 }
 
