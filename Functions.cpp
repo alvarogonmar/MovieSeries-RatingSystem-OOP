@@ -62,4 +62,24 @@ void showCatalog(vector<Video *> &catalog)
     }
 }
 
-void addScore(vector<Video *> &showCatalog) {}
+void addScore(vector<Video *> &catalog)
+{
+    string id;
+    cout << "Please entern an ID: ";
+    getline(cin, id);
+
+    for (Video *video : catalog)
+    {
+        if (video->getId() == id)
+        {
+            double score;
+            do
+            {
+                cout << "Enter rating (1-5): ";
+                cin >> score;
+                if (score < 1 || score > 5)
+                    cout << "Please enter a value between 1 and 5.\n";
+            } while (score < 1 || score > 5);
+        }
+    }
+}
