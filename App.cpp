@@ -25,6 +25,10 @@ int main()
         {
             showCatalog(catalog);
         }
+        else if (userOption == 2)
+        {
+            addScore(catalog);
+        }
     } while (userOption != 9);
     cout << "Goodbye!" << endl;
     return 0;
