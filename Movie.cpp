@@ -7,7 +7,7 @@ Movie::Movie(string type, string id, string title, string genre, string duration
 
 void Movie::print()
 {
-    cout << "ID: " + id + "|Title: " + title + "|Genre: " + genre + "|Duration: " + duration + " mins" << endl;
+    cout << "ID: " + id + "|Title: " + title + "|Genre: " + genre + "|Duration: " + duration + " mins" + "|Rating: ";
     double score = getAverage();
     if (score < 0)
     {
@@ -15,6 +15,7 @@ void Movie::print()
     }
     else
     {
-        cout << score << endl;
+        cout << score;
     }
+    cout << endl;
 }
