@@ -10,6 +10,15 @@ void Chapter::print()
     cout << "ID: " + id + "|Chapter Title: " + title + "|Genre: " + genre + "|Duration: " + duration + " mins |Serie Title: " + serieTitle +
                 "|Episode Number: " + episodeNumber
          << endl;
+    double score = getAverage();
+    if (score < 0)
+    {
+        cout << "SC";
+    }
+    else
+    {
+        cout << score << endl;
+    }
 }
 
 string Chapter::getSerieTitle() { return serieTitle; }
