@@ -80,6 +80,15 @@ void addScore(vector<Video *> &catalog)
                 if (score < 1 || score > 5)
                     cout << "Please enter a value between 1 and 5.\n";
             } while (score < 1 || score > 5);
+
+            video->addScore(score);
+            cout << "Score added!" << endl;
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            break;
+        }
+        else
+        {
+            cout << "No video found with that ID." << endl;
         }
     }
 }
