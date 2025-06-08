@@ -59,6 +59,7 @@ void showCatalog(vector<Video *> &catalog)
 
     for (Video *video : catalog)
     {
+        cout << string(100, '-') << endl;
         video->print();
     }
 }
@@ -85,11 +86,8 @@ void addScore(vector<Video *> &catalog)
             video->addScore(score);
             cout << "Score added!" << endl;
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            break;
-        }
-        else
-        {
-            cout << "No video found with that ID." << endl;
+            return;
         }
     }
+    cout << "No video found with that ID." << endl;
 }
