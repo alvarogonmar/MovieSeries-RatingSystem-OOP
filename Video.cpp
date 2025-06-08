@@ -10,6 +10,7 @@ void Video::addScore(double score)
 {
     qualifications.push_back(score);
 }
+
 double Video::getAverage()
 {
     if (qualifications.empty())
@@ -21,6 +22,7 @@ double Video::getAverage()
     }
     return sum / qualifications.size();
 }
+
 string Video::getGenre() { return genre; }
 string Video::getId() { return id; }
 string Video::getTitle() { return title; }
