@@ -5,7 +5,7 @@
 #include "OOPUtils.h"
 #include "Functions.h"
 
-void showCatalog(vector<Video *> &catalog)
+void loadCatalog(vector<Video *> &catalog)
 {
     ifstream file("videos.txt");
 
@@ -50,11 +50,17 @@ void showCatalog(vector<Video *> &catalog)
     }
     else
     {
-        cerr << "FATAL AND TERRIBLE ERROR OPENING FILE!" << endl;
+        cout << "FATAL AND TERRIBLE ERROR OPENING FILE!" << endl;
     }
+}
+
+void showCatalog(vector<Video *> &catalog)
+{
+
     for (Video *video : catalog)
     {
         video->print();
+        video->getAverage();
     }
     for (Video *video : catalog)
     {
