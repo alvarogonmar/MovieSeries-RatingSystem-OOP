@@ -61,3 +61,5 @@ void showCatalog(vector<Video *> &catalog)
         delete video;
     }
 }
+
+void addScore(vector<Video *> &showCatalog) {}
