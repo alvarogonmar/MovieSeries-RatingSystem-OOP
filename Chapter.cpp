@@ -36,6 +36,21 @@ void Chapter::printByScore()
     }
     cout << endl;
 }
+void Chapter::printByGenre()
+{
+    cout << "ID: " + id + "|Chapter Title: " + title + "|Serie Title: " + serieTitle +
+                "|Episode Number: " + episodeNumber + "|Genre: " + genre + "|Rating: ";
+    double score = getAverage();
+    if (score < 0)
+    {
+        cout << "SC";
+    }
+    else
+    {
+        cout << score << endl;
+    }
+    cout << endl;
+}
 
 string Chapter::getSerieTitle() { return serieTitle; }
 string Chapter::getEpisodeNumber() { return episodeNumber; }
