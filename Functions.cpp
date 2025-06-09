@@ -91,3 +91,24 @@ void addScore(vector<Video *> &catalog)
     }
     cout << "No video found with that ID." << endl;
 }
+
+void askMinimumScore()
+{
+    int userOption = 0;
+    cout << "Select an Option:" << endl;
+    cout << "1. Movies\n2. Series\n3. All (movies and series)\nnSelect an option: ";
+    cin >> userOption;
+    if (userOption == 1)
+    {
+    }
+    else if (condition)
+    {
+        /* code */
+    }
+    else if (condition)
+    {
+        /* code */
+    }
+
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+}
