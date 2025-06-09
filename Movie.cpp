@@ -37,4 +37,15 @@ void Movie::printByScore()
 
 void Movie::printByGenre()
 {
+    cout << "ID: " + id + "|Title: " + title + "|Genre: " + genre + "|Rating: ";
+    double score = getAverage();
+    if (score < 0)
+    {
+        cout << "SC";
+    }
+    else
+    {
+        cout << score;
+    }
+    cout << endl;
 }
