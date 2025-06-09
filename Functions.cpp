@@ -115,17 +115,17 @@ void askMinimumScore(vector<Video *> &catalog)
             if (userOption == 1 && video->getType() == "p")
             {
                 // movies
-                video->print();
+                video->printByScore();
             }
             else if (userOption == 2 && video->getType() == "c")
             {
                 // Series
-                video->print();
+                video->printByScore();
             }
             else if (userOption == 3)
             {
                 // Ambos
-                video->print();
+                video->printByScore();
             }
         }
     }
