@@ -15,6 +15,7 @@ public:
     virtual ~Video() {} // destructor
     double getAverage();
 
+    string getType();
     string getGenre();
     string getId();
     string getTitle();

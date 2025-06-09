@@ -23,6 +23,7 @@ double Video::getAverage()
     return sum / qualifications.size();
 }
 
+string Video::getType() { return type; }
 string Video::getGenre() { return genre; }
 string Video::getId() { return id; }
 string Video::getTitle() { return title; }
