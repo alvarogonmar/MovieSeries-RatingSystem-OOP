@@ -8,4 +8,5 @@ public:
     Movie(string type, string id, string title, string genre, string duration);
     void print() override;
     void printByScore() override;
+    void printByGenre() override;
 };
