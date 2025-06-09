@@ -6,7 +6,7 @@ class Video
 {
 protected:
     string type, id, title, genre, duration;
-    vector<int> qualifications;
+    vector<double> qualifications;
 
 public:
     Video(string type, string id, string title, string genre, string duration);
@@ -18,6 +18,7 @@ public:
 
     virtual ~Video() {} // destructor
     double getAverage();
+    // friend ostream& operator<<(ostream& os, const Video& video);
 
     string getType();
     string getGenre();
