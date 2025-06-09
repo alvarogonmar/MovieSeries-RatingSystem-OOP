@@ -132,3 +132,41 @@ void askMinimumScore(vector<Video *> &catalog)
 
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
+
+void askByGenre(vector<Video *> &catalog)
+{
+    int userOption = 0;
+    do
+    {
+        cout << "Select an Option:" << endl;
+        cout << "1. Movies\n2. Series\n3. All (movies and series)\nnSelect an option: ";
+        cin >> userOption;
+    } while (userOption < 1 || userOption > 3);
+
+    // double score = 0;
+    string genreToSearch;
+    cout << "Genre: ";
+    cin >> genreToSearch;
+    for (Video *video : catalog)
+    {
+        string genreSaved = video->getGenre(); // Jalar el genero y guardarla en la variable genreSaved
+
+        if (userOption == 1 && video->getGenre() == genreToSearch)
+        {
+            // movies
+            video->printByGenre();
+        }
+        else if (userOption == 2 && video->getGenre() == genreToSearch)
+        {
+            // Series
+            video->printByGenre();
+        }
+        else if (userOption == 3 && video->getGenre() == genreToSearch)
+        {
+            // Ambos
+            video->printByGenre();
+        }
+    }
+
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+}
