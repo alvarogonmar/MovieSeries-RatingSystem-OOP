@@ -14,6 +14,7 @@ public:
 
     virtual void print() = 0;
     virtual void printByScore() = 0;
+    virtual void printByGenre() = 0;
 
     virtual ~Video() {} // destructor
     double getAverage();
