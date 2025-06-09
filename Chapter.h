@@ -16,4 +16,6 @@ public:
 
     string getEpisodeNumber();
     string getSerieTitle();
+    friend ostream &operator<<(ostream &os, const Chapter &chapter); // Aqui utilice GitHub Copilot, al poner solamente  de ostream para adelante me marcaba error en
+                                                                     // " &operator" por lo que le pregunte y me dijo que tenia que poner el friend para que pudiera acceder a los datos privados o protegidos de Chapter
 };
