@@ -34,3 +34,7 @@ void Movie::printByScore()
     }
     cout << endl;
 }
+
+void Movie::printByGenre()
+{
+}
