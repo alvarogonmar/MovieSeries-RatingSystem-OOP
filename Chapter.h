@@ -11,6 +11,7 @@ protected:
 public:
     Chapter(string type, string id, string title, string genre, string duration, string episodeNumber, string serieTitle);
     void print() override;
+    void printByScore();
     string getEpisodeNumber();
     string getSerieTitle();
 };
