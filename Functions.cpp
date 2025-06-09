@@ -67,6 +67,7 @@ void showCatalog(vector<Video *> &catalog)
 void addScore(vector<Video *> &catalog)
 {
     string id;
+    cout << string(100, '-') << endl;
     cout << "Please entern an ID: ";
     getline(cin, id);
 
@@ -86,10 +87,12 @@ void addScore(vector<Video *> &catalog)
             video->addScore(score);
             cout << "Score added!" << endl;
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cout << string(100, '-') << endl;
             return;
         }
     }
     cout << "No video found with that ID." << endl;
+    cout << string(100, '-') << endl;
 }
 
 void askMinimumScore(vector<Video *> &catalog)
@@ -97,12 +100,15 @@ void askMinimumScore(vector<Video *> &catalog)
     int userOption = 0;
     do
     {
+
+        cout << string(100, '-') << endl;
         cout << "Select an Option:" << endl;
         cout << "1. Movies\n2. Series\n3. All (movies and series)\nSelect an option: ";
         cin >> userOption;
     } while (userOption < 1 || userOption > 3);
 
     double score = 0;
+    cout << string(100, '-') << endl;
     cout << "Minimum Score: ";
     cin >> score;
     for (Video *video : catalog)
@@ -129,7 +135,7 @@ void askMinimumScore(vector<Video *> &catalog)
             }
         }
     }
-
+    cout << string(100, '-') << endl;
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
 
@@ -138,6 +144,8 @@ void askByGenre(vector<Video *> &catalog)
     int userOption = 0;
     do
     {
+
+        cout << string(100, '-') << endl;
         cout << "Select an Option:" << endl;
         cout << "1. Movies\n2. Series\n3. All (movies and series)\nSelect an option: ";
         cin >> userOption;
