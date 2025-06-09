@@ -30,6 +30,10 @@ int main()
         {
             addScore(catalog);
         }
+        else if (userOption == 3)
+        {
+            askMinimumScore();
+        }
     } while (userOption != 9);
 
     for (Video *video : catalog)

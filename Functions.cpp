@@ -95,20 +95,24 @@ void addScore(vector<Video *> &catalog)
 void askMinimumScore()
 {
     int userOption = 0;
-    cout << "Select an Option:" << endl;
-    cout << "1. Movies\n2. Series\n3. All (movies and series)\nnSelect an option: ";
-    cin >> userOption;
-    if (userOption == 1)
+    do
     {
-    }
-    else if (condition)
-    {
-        /* code */
-    }
-    else if (condition)
-    {
-        /* code */
-    }
+        cout << "Select an Option:" << endl;
+        cout << "1. Movies\n2. Series\n3. All (movies and series)\nnSelect an option: ";
+        cin >> userOption;
+    } while (userOption < 1 || userOption > 5);
 
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    // if (userOption == 1)
+    // {
+    // }
+    // else if (condition)
+    // {
+    //     /* code */
+    // }
+    // else if (condition)
+    // {
+    //     /* code */
+    // }
+
+    // cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
