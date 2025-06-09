@@ -92,7 +92,7 @@ void addScore(vector<Video *> &catalog)
     cout << "No video found with that ID." << endl;
 }
 
-void askMinimumScore()
+void askMinimumScore(vector<Video *> &catalog)
 {
     int userOption = 0;
     do
@@ -102,17 +102,20 @@ void askMinimumScore()
         cin >> userOption;
     } while (userOption < 1 || userOption > 5);
 
-    // if (userOption == 1)
-    // {
-    // }
-    // else if (condition)
-    // {
-    //     /* code */
-    // }
-    // else if (condition)
-    // {
-    //     /* code */
-    // }
+    if (userOption == 1)
+    {
+        // movies
+    }
+    else if (userOption == 2)
+    {
+        // Series
+        /* code */
+    }
+    else if (userOption == 3)
+    {
+        // Ambos
+        /* code */
+    }
 
-    // cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
