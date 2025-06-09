@@ -20,7 +20,8 @@ double Video::getAverage()
     {
         sum += score;
     }
-    return sum / qualifications.size();
+    return sum / qualifications.size(); // ChatGPT me ayudo a hacer este if,
+                                        // donde checa si el vector quealifications esta vacio, si si, retorna - 1
 }
 
 string Video::getType() { return type; }
