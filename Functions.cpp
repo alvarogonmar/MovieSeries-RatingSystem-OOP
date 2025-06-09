@@ -105,19 +105,29 @@ void askMinimumScore(vector<Video *> &catalog)
     double score = 0;
     cout << "Minimum Score: ";
     cin >> score;
-    if (userOption == 1)
+    for (Video *video : catalog)
     {
-        // movies
-    }
-    else if (userOption == 2)
-    {
-        // Series
-        /* code */
-    }
-    else if (userOption == 3)
-    {
-        // Ambos
-        /* code */
+
+        double avg = video->getAverage(); // Jalar la calificacion y guardarla en la variable avg
+        if (score <= avg)
+        {
+
+            if (userOption == 1 && video->getType() == "p")
+            {
+                // movies
+                video->print();
+            }
+            else if (userOption == 2 && video->getType() == "c")
+            {
+                // Series
+                video->print();
+            }
+            else if (userOption == 3)
+            {
+                // Ambos
+                video->print();
+            }
+        }
     }
 
     cin.ignore(numeric_limits<streamsize>::max(), '\n');
