@@ -100,8 +100,11 @@ void askMinimumScore(vector<Video *> &catalog)
         cout << "Select an Option:" << endl;
         cout << "1. Movies\n2. Series\n3. All (movies and series)\nnSelect an option: ";
         cin >> userOption;
-    } while (userOption < 1 || userOption > 5);
+    } while (userOption < 1 || userOption > 3);
 
+    double score = 0;
+    cout << "Minimum Score: ";
+    cin >> score;
     if (userOption == 1)
     {
         // movies

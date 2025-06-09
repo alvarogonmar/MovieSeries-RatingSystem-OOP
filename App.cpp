@@ -32,7 +32,7 @@ int main()
         }
         else if (userOption == 3)
         {
-            askMinimumScore();
+            askMinimumScore(catalog);
         }
     } while (userOption != 9);
 
