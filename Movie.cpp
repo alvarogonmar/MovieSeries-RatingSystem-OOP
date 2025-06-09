@@ -19,3 +19,18 @@ void Movie::print()
     }
     cout << endl;
 }
+
+void Movie::printByScore()
+{
+    cout << "ID: " + id + "|Title: " + title + "|Rating: ";
+    double score = getAverage();
+    if (score < 0)
+    {
+        cout << "SC";
+    }
+    else
+    {
+        cout << score;
+    }
+    cout << endl;
+}
