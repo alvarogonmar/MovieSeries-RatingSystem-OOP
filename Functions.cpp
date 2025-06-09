@@ -98,7 +98,7 @@ void askMinimumScore(vector<Video *> &catalog)
     do
     {
         cout << "Select an Option:" << endl;
-        cout << "1. Movies\n2. Series\n3. All (movies and series)\nnSelect an option: ";
+        cout << "1. Movies\n2. Series\n3. All (movies and series)\nSelect an option: ";
         cin >> userOption;
     } while (userOption < 1 || userOption > 3);
 
@@ -139,14 +139,15 @@ void askByGenre(vector<Video *> &catalog)
     do
     {
         cout << "Select an Option:" << endl;
-        cout << "1. Movies\n2. Series\n3. All (movies and series)\nnSelect an option: ";
+        cout << "1. Movies\n2. Series\n3. All (movies and series)\nSelect an option: ";
         cin >> userOption;
     } while (userOption < 1 || userOption > 3);
 
     // double score = 0;
     string genreToSearch;
     cout << "Genre: ";
-    cin >> genreToSearch;
+    cin.ignore();
+    getline(cin, genreToSearch);
     for (Video *video : catalog)
     {
         string genreSaved = video->getGenre(); // Jalar el genero y guardarla en la variable genreSaved
