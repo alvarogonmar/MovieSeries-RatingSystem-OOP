@@ -12,6 +12,8 @@ public:
     Chapter(string type, string id, string title, string genre, string duration, string episodeNumber, string serieTitle);
     void print() override;
     void printByScore() override;
+    void printByGenre() override;
+
     string getEpisodeNumber();
     string getSerieTitle();
 };
