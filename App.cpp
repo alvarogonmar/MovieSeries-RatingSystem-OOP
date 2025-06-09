@@ -34,6 +34,10 @@ int main()
         {
             askMinimumScore(catalog);
         }
+        else if (userOption == 4)
+        {
+            askByGenre(catalog);
+        }
     } while (userOption != 9);
 
     for (Video *video : catalog)
