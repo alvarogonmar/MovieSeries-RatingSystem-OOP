@@ -7,7 +7,7 @@
 
 void loadCatalog(vector<Video *> &catalog)
 {
-    ifstream file("videos.txt");
+    ifstream file("videos1.txt");
 
     string currentLine;
     // DO ACTUAL READING

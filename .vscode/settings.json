@@ -5,6 +5,7 @@
         "iostream": "cpp",
         "ios": "cpp",
         "string": "cpp",
-        "limits": "cpp"
+        "limits": "cpp",
+        "print": "cpp"
     }
 }
