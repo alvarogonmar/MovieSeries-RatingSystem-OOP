@@ -16,21 +16,6 @@ ostream &operator<<(ostream &os, const Movie &movie)
     return os;
 }
 
-// void Movie::print()
-// {
-//     cout << "ID: " + id + "|Title: " + title + "|Genre: " + genre + "|Duration: " + duration + " mins" + "|Rating: ";
-//     double score = getAverage();
-//     if (score < 0)
-//     {
-//         cout << "SC";
-//     }
-//     else
-//     {
-//         cout << score;
-//     }
-//     cout << endl;
-// }
-
 void Movie::printByScore()
 {
     cout << "ID: " + id + "|Title: " + title + "|Rating: ";
