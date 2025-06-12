@@ -7,7 +7,6 @@
 #include "Functions.h"
 using namespace std;
 
-// vector<Video *> catalog;
 int main()
 {
     vector<Video *> catalog;
