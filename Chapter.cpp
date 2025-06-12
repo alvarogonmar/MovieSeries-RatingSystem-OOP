@@ -5,20 +5,16 @@ using namespace std;
 Chapter::Chapter(string type, string id, string title, string duration, string genre, string serieTitle, string episodeNumber)
     : Video(type, id, title, genre, duration), serieTitle(serieTitle), episodeNumber(episodeNumber) {}
 
-void Chapter::print()
+ostream &operator<<(ostream &os, const Chapter &chapter)
 {
-    cout << "ID: " + id + "|Chapter Title: " + title + "|Genre: " + genre + "|Duration: " + duration + " mins |Serie Title: " + serieTitle +
-                "|Episode Number: " + episodeNumber + "|Rating: ";
-    double score = getAverage();
+    os << "ID: " << chapter.id << "|Chapter Title: " << chapter.title << "|Genre: " << chapter.genre << "|Duration: "
+       << chapter.duration << " mins" << "|Serie Title: " << chapter.serieTitle << "|Episode Number: " << chapter.episodeNumber << "|Rating: ";
+    double score = chapter.getAverage();
     if (score < 0)
-    {
-        cout << "SC";
-    }
+        os << "SC";
     else
-    {
-        cout << score << endl;
-    }
-    cout << endl;
+        os << score;
+    return os;
 }
 
 void Chapter::printByScore()
@@ -52,5 +48,5 @@ void Chapter::printByGenre()
     cout << endl;
 }
 
-string Chapter::getSerieTitle() { return serieTitle; }
-string Chapter::getEpisodeNumber() { return episodeNumber; }
+string Chapter::getSerieTitle() const { return serieTitle; }
+string Chapter::getEpisodeNumber() const { return episodeNumber; }
