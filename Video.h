@@ -12,17 +12,15 @@ public:
     Video(string type, string id, string title, string genre, string duration);
     void addScore(double score);
 
-    virtual void print() = 0;
     virtual void printByScore() = 0;
     virtual void printByGenre() = 0;
 
     virtual ~Video() {} // destructor
-    double getAverage();
-    // friend ostream& operator<<(ostream& os, const Video& video);
+    double getAverage() const;
 
-    string getType();
-    string getGenre();
-    string getId();
-    string getTitle();
-    string getDuration();
+    string getType() const;
+    string getGenre() const;
+    string getId() const;
+    string getTitle() const;
+    string getDuration() const;
 };
