@@ -157,7 +157,6 @@ void askByGenre(vector<Video *> &catalog)
         cin >> userOption;
     } while (userOption < 1 || userOption > 3);
 
-    // double score = 0;
     string genreToSearch;
     cout << "Genre: ";
     cin.ignore();
