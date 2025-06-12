@@ -57,10 +57,22 @@ void loadCatalog(vector<Video *> &catalog)
 void showCatalog(vector<Video *> &catalog)
 {
 
+    // for (Video *video : catalog)
+    // {
+    //     cout << string(100, '-') << endl;
+    //     video->print();
+    // }
     for (Video *video : catalog)
     {
         cout << string(100, '-') << endl;
-        video->print();
+        if (video->getType() == "p")
+        {
+            cout << *(static_cast<Movie *>(video)) << endl;
+        }
+        else if (video->getType() == "c")
+        {
+            cout << *(static_cast<Chapter *>(video)) << endl;
+        }
     }
 }
 
