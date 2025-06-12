@@ -30,7 +30,7 @@ c,20150123-S02E01,The North Remembers,53,Drama,Game of Thrones,1
 c,20150123-S02E02,The Night Lands,54,Drama,Game of Thrones,2
 c,20180912-S01E01,Chapter One: The Vanishing of Will Byers,47,Ciencia Ficcion,Stranger Things,1
 c,20180912-S01E02,Chapter Two: The Weirdo on Maple Street,55,Ciencia Ficcion,Stranger Things,2
-c,20180912-S01E03,Chapter Three: Holly, Jolly,51,Ciencia Ficcion,Stranger Things,3
+c,20180912-S01E03,Chapter Three: Holly Jolly,51,Ciencia Ficcion,Stranger Things,3
 c,20202234-S01E01,Welcome to Hawkins,50,Ciencia Ficcion,Stranger Things,1
 c,20173256-S01E01,The Mandalorian,39,Ciencia Ficcion,The Mandalorian,1
 c,20173256-S01E02,The Child,33,Ciencia Ficcion,The Mandalorian,2
