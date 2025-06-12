@@ -56,18 +56,12 @@ void loadCatalog(vector<Video *> &catalog)
 
 void showCatalog(vector<Video *> &catalog)
 {
-
-    // for (Video *video : catalog)
-    // {
-    //     cout << string(100, '-') << endl;
-    //     video->print();
-    // }
     for (Video *video : catalog)
     {
         cout << string(100, '-') << endl;
         if (video->getType() == "p")
         {
-            cout << *(static_cast<Movie *>(video)) << endl;
+            cout << *(static_cast<Movie *>(video)) << endl; // ChatGPT me ayudo con como imprimir con static_cast
         }
         else if (video->getType() == "c")
         {
