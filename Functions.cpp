@@ -165,22 +165,25 @@ void askByGenre(vector<Video *> &catalog)
     {
         string genreSaved = video->getGenre(); // Jalar el genero y guardarla en la variable genreSaved
 
-        if (userOption == 1 && video->getGenre() == genreToSearch)
+        if (userOption == 1 && video->getGenre() == genreToSearch && video->getType() == "p")
         {
             // movies
             video->printByGenre();
+            cout << string(100, '-') << endl;
         }
-        else if (userOption == 2 && video->getGenre() == genreToSearch)
+        else if (userOption == 2 && video->getGenre() == genreToSearch && video->getType() == "c")
         {
             // Series
             video->printByGenre();
+            cout << string(100, '-') << endl;
         }
         else if (userOption == 3 && video->getGenre() == genreToSearch)
         {
             // Ambos
             video->printByGenre();
+            cout << string(100, '-') << endl;
         }
     }
 
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    // cin.ignore(numeric_limits<streamsize>::max(), '\n');
 }
