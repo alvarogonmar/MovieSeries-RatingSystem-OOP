@@ -5,20 +5,31 @@ using namespace std;
 Movie::Movie(string type, string id, string title, string genre, string duration)
     : Video(type, id, title, genre, duration) {}
 
-void Movie::print()
+ostream &operator<<(ostream &os, const Movie &movie)
 {
-    cout << "ID: " + id + "|Title: " + title + "|Genre: " + genre + "|Duration: " + duration + " mins" + "|Rating: ";
-    double score = getAverage();
+    os << "ID: " << movie.id << "|Title: " << movie.title << "|Genre: " << movie.genre << "|Duration: " << movie.duration << " mins" << "|Rating: ";
+    double score = movie.getAverage();
     if (score < 0)
-    {
-        cout << "SC";
-    }
+        os << "SC";
     else
-    {
-        cout << score;
-    }
-    cout << endl;
+        os << score;
+    return os;
 }
+
+// void Movie::print()
+// {
+//     cout << "ID: " + id + "|Title: " + title + "|Genre: " + genre + "|Duration: " + duration + " mins" + "|Rating: ";
+//     double score = getAverage();
+//     if (score < 0)
+//     {
+//         cout << "SC";
+//     }
+//     else
+//     {
+//         cout << score;
+//     }
+//     cout << endl;
+// }
 
 void Movie::printByScore()
 {
