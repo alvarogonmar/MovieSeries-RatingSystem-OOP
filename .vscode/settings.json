@@ -6,6 +6,8 @@
         "ios": "cpp",
         "string": "cpp",
         "limits": "cpp",
-        "print": "cpp"
+        "print": "cpp",
+        "__locale": "cpp",
+        "locale": "cpp"
     }
 }
