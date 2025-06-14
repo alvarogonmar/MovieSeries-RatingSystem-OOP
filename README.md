@@ -30,5 +30,5 @@
 ### Compile the Project
 
 ```bash
-g++ *.cpp -o VideoCatalog
+g++ *.cpp -o App
 ```

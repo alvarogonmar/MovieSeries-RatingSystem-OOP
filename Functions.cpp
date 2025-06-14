@@ -1,4 +1,5 @@
 #include <fstream>
+#include <limits>
 #include "Video.h"
 #include "Movie.h"
 #include "Chapter.h"
